@@ -1,0 +1,109 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+}
+body{
+  margin:0px;
+  padding: 0px;
+}
+div{
+  margin:0px;
+  padding: 0px;
+}
+/* Navbar Component styling */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+  box-shadow: 0 5px 15px -6px black;
+  margin-bottom: 40px;
+  background-color: lightgray;
+}
+.navbar div{
+  display: flex;
+  align-items: center;
+}
+.navbar input{
+  height: 45px;
+  width: 400px;
+  outline: none;
+  padding-left: 10px;
+  margin-right: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.navbar button{
+  height: 45px;
+  width:90px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+/* AlbumList Component Styling */
+.albumList{
+  height: auto;
+  width: 100vw;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 1px #ccc;
+}
+.album{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border:1px solid gray;
+}
+.album p{
+  font-size: 30px;
+  font-weight: 500;
+}
+.album input{
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 20px;
+}
+.buttons{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.btn{
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 100px;
+  background-color: lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.blue{
+  background-color: blue;
+  cursor: pointer;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
