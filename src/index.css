@@ -107,3 +107,79 @@ div{
 .red{
   color: red;
 }
+
+/* Responsive */
+@media only screen and (max-width: 800px){
+  .navbar input{
+    height: 40px;
+    width: 350px;
+  }
+  .navbar button{
+    height: 40px;
+    width: 80px;
+  }
+  .album p{
+    font-size: 25px;
+  }
+  .btn{
+    height: 35px;
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navbar{
+    height: 80px;
+  }
+  .navbar input{
+    height: 35px;
+    width: 300px;
+  }
+  .navbar button{
+    height: 35px;
+  }
+  .album p{
+    font-size: 22px;
+  }
+  .container{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .navbar input{
+    height: 33px;
+    width: 250px;
+    font-size: 18px;
+  }
+  .navbar button{
+    height: 33px;
+    width: 70px;
+    font-size: 18px;
+  }
+  .album p{
+    font-size: 20px;
+  }
+  .btn{
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+  }
+  .container{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .navbar input{
+    width: 230px;
+    font-size: 16px;
+  }
+  .navbar button{
+    width: 58px;
+    height: 30px;
+  }
+  .container{
+    width: 85%;
+  }
+}

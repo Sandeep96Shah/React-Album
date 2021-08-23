@@ -11,7 +11,7 @@ export function albums(data){
 
 export function fetch_albums(){
     return (dispatch) => {
-        axios.get('http://localhost:3000/albums')
+        axios.get('http://localhost:3000/albums',)
         .then((response) => {
             if(response){
                 dispatch(albums(response.data));
