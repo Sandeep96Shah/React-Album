@@ -11,7 +11,7 @@ export function albums(data){
 
 export function fetch_albums(){
     return (dispatch) => {
-        axios.get('http://localhost:3000/albums',)
+        axios.get('https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums',)
         .then((response) => {
             if(response){
                 dispatch(albums(response.data));
@@ -25,7 +25,7 @@ export function fetch_albums(){
 }
 
 export function update_album(album){
-    axios.put(`http://localhost:3000/albums/${album.id}`,album)
+    axios.put(`https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums/${album.id}`,album)
         .then(response => console.log(" put response", response))
         .catch(error => console.log("put error", error));
     return {
@@ -36,7 +36,7 @@ export function update_album(album){
 }
 
 export function delete_album(id){
-    axios.delete(`http://localhost:3000/albums/${id}`)
+    axios.delete(`https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums/${id}`)
         .then(response => console.log("delete response", response))
         .catch(error => console.log("delete error", error));
 
@@ -47,7 +47,7 @@ export function delete_album(id){
 }
 
 export function add_album(album){
-    axios.post('http://localhost:3000/albums', album)
+    axios.post('https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums', album)
         .then(response => console.log("response", response))
         .catch(error => console.log("error", error));
 
