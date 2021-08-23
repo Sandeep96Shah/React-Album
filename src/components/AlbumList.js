@@ -2,11 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import '../index.css';
 
+
+//this component is used to display the albums with update and delete functionality
 export default function AlbumList({album, handleUpdate, handleDeleteAlbum}) {
 
     const [title, setTitle] = useState();
     const [edit, setEdit] = useState();
 
+    //function for updating the album
     const handleSave = () => {
         const updated = {
             "userId": 1,
@@ -17,10 +20,12 @@ export default function AlbumList({album, handleUpdate, handleDeleteAlbum}) {
         setEdit(false);
     }
 
+    //function for changing the ui(update, delete) to (save, cancel) and vice-versa
     const handleClick = () => {
         setEdit(!edit);
     }
 
+    //function for deleting the album
     const handleDelete = () => {
         handleDeleteAlbum(album.id);
     }

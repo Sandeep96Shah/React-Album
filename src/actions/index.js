@@ -2,6 +2,7 @@ import axios from 'axios';
 
 import { FETCH_ALBUMS, UPDATE, DELETE, ADD } from './actionTypes';
 
+//function to add the fetched albums into store
 export function albums(data){
     return {
         type:FETCH_ALBUMS,
@@ -9,6 +10,7 @@ export function albums(data){
     }
 }
 
+//http get method to fetch the albums
 export function fetch_albums(){
     return (dispatch) => {
         axios.get('https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums',)
@@ -24,6 +26,7 @@ export function fetch_albums(){
     };
 }
 
+//http put method to update the album 
 export function update_album(album){
     axios.put(`https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums/${album.id}`,album)
         .then(response => console.log(" put response", response))
@@ -35,6 +38,7 @@ export function update_album(album){
     }
 }
 
+//httmp delete method to delete the album
 export function delete_album(id){
     axios.delete(`https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums/${id}`)
         .then(response => console.log("delete response", response))
@@ -46,6 +50,7 @@ export function delete_album(id){
     }
 }
 
+//httmp method post to add the album
 export function add_album(album){
     axios.post('https://my-json-server.typicode.com/Sandeep96Shah/React-Album/albums', album)
         .then(response => console.log("response", response))

@@ -1,9 +1,11 @@
 import { FETCH_ALBUMS, UPDATE, DELETE, ADD } from "../actions/actionTypes"
 
+//state for the redux store
 const initialState = {
     albumsList:[],
 }
 
+//reducers function based on the action.type
 export default function albums(state = initialState, action){
     switch(action.type){
         case FETCH_ALBUMS:
